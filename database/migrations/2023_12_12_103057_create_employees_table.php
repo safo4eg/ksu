@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('fio');
             $table->string('gender');
             $table->string('sp');
-            $table->boolean('kids');
+            $table->boolean('kids')->default(0);
             $table->string('post');
             $table->string('degree');
         });

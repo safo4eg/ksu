@@ -25,3 +25,5 @@ Route::group(
     Route::post('/login', [Login::class, 'login'])->name('login');
     Route::get('/logout', [Logout::class, 'logout'])->name('logout');
 });
+
+Route::resource('employees', \App\Http\Controllers\EmployeeController::class);
